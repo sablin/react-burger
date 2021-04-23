@@ -1,9 +1,10 @@
 import react from 'react'
 import styles from './burger-constructor.module.css'
-import {ConstructorElement} from '@ya.praktikum/react-developer-burger-ui-components'
+import {Button, ConstructorElement, CurrencyIcon} from '@ya.praktikum/react-developer-burger-ui-components'
 
 const BurgerConstructor = (props) => {
     return (
+        <>
         <div className={styles.burgerConstructor}>
     {props.items.map((info, index) => (
     <div className={styles.BurgerContainer}>
@@ -15,10 +16,20 @@ const BurgerConstructor = (props) => {
       type="top"
       key={index}
 />
+
 </div>
+
+
     ))}
-       
+             <div className={styles.result}>
+            <span className="text text_type_main-large"> 610 <CurrencyIcon type="primary" /> </span>
+            <Button type="primary" size="medium">
+ Оформить заказ
+</Button>
         </div>
+        </div>
+  
+        </>
     )
 }
 

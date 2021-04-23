@@ -21,13 +21,35 @@ const BurgerIngredients = (props) =>{
         Начинка
       </Tab>
     </div>
-    <h3>Булки</h3>
+    
     <div className={styles.ingredientsChoise}>
-      
-            {props.items.map((item, index)=>(
-                <BurgerIngredient image={item.image} price={item.price} name={item.name} key={index}/>
-            ))}
-        
+      <div className={styles.ingidientsType}> 
+            <h3 className="text text_type_main-medium">Булки</h3>
+            {props.items.map((item, index)=>{
+                 if(item.type === 'bun'){
+                 return  <BurgerIngredient image={item.image} price={item.price} name={item.name} type={item.type} key={index}/>
+            }
+            }
+            )}
+      </div>
+      <div className={styles.ingidientsType}>
+            <h3 className="text text_type_main-medium">Соусы</h3>
+            {props.items.map((item, index)=>{
+                 if(item.type === 'main'){
+                 return  <BurgerIngredient image={item.image} price={item.price} name={item.name} type={item.type} key={index}/>
+            }
+            }
+            )}
+      </div>
+      <div className={styles.ingidientsType}>
+            <h3 className="text text_type_main-medium">Начинка</h3>
+            {props.items.map((item, index)=>{
+                 if(item.type === 'sauce'){
+                 return  <BurgerIngredient image={item.image} price={item.price} name={item.name} type={item.type} key={index}/>
+            }
+            }
+            )}
+      </div>
       
     </div>
         </div>

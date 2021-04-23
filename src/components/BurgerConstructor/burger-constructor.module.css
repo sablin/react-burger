@@ -8,3 +8,11 @@
 .BurgerContainer {
   margin-bottom: 16px;
 }
+.result {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-around;
+  align-items: center;
+  text-align: right;
+  margin-top: 40px;
+}
