@@ -38,3 +38,10 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #253861;
 }
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0 20px;
+}

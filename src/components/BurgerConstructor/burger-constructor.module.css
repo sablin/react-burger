@@ -16,3 +16,7 @@
   text-align: right;
   margin-top: 40px;
 }
+li {
+  list-style: none;
+  margin-bottom: 16px;
+}

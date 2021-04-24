@@ -1,14 +1,6 @@
 .App {
   height: 100vh;
 }
-.container {
-  width: 1440px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  max-width: 100%;
-  padding: 0 20px;
-}
-
 main {
   position: relative;
   display: flex;
