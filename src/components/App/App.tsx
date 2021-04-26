@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-    <div className={`${styles.App} ${styles.container}`}>
+    <div className={`${styles.App} container`}>
       <AppHeader />
       <main>
         <BurgerIngredients items={data}/>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Counter, Tab, BurgerIcon, ListIcon, ProfileIcon} from '@ya.praktikum/react-developer-burger-ui-components'
+import {Tab} from '@ya.praktikum/react-developer-burger-ui-components'
 import BurgerIngredient from '../BurgerIngredient/burger-ingredient'
 import styles from './burger-ingredients.module.css'
 
@@ -27,7 +27,9 @@ const BurgerIngredients = (props) =>{
             <h3 className="text text_type_main-medium">Булки</h3>
             {props.items.map((item, index)=>{
                  if(item.type === 'bun'){
-                 return  <BurgerIngredient image={item.image} price={item.price} name={item.name} type={item.type} key={index}/>
+                 return  <BurgerIngredient image={item.image} price={item.price} name={item.name} type={item.type} key={item._id}/>
+            }else{
+              return false
             }
             }
             )}
@@ -36,7 +38,9 @@ const BurgerIngredients = (props) =>{
             <h3 className="text text_type_main-medium">Соусы</h3>
             {props.items.map((item, index)=>{
                  if(item.type === 'main'){
-                 return  <BurgerIngredient image={item.image} price={item.price} name={item.name} type={item.type} key={index}/>
+                 return  <BurgerIngredient image={item.image} price={item.price} name={item.name} type={item.type} key={item._id}/>
+            }else{
+              return false
             }
             }
             )}
@@ -45,7 +49,9 @@ const BurgerIngredients = (props) =>{
             <h3 className="text text_type_main-medium">Начинка</h3>
             {props.items.map((item, index)=>{
                  if(item.type === 'sauce'){
-                 return  <BurgerIngredient image={item.image} price={item.price} name={item.name} type={item.type} key={index}/>
+                 return  <BurgerIngredient image={item.image} price={item.price} name={item.name} type={item.type} key={item._id}/>
+            }else{
+              return false
             }
             }
             )}

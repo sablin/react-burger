@@ -20,7 +20,7 @@ const BurgerConstructor = (props) => {
             }</span>
         <ul className={styles.BurgerContainer}>
     {props.items.map((info, index) => {
-     return info.type != 'bun' ? <li  key={info._id}><ConstructorElement
+     return info.type !== 'bun' ? <li  key={info._id}><ConstructorElement
      thumbnail={info.image_mobile}
       text={info.name}
       price={info.price}
