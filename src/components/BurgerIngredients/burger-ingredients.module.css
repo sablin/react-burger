@@ -13,6 +13,7 @@
   overflow-x: hidden;
   height: inherit;
   width: 600px;
+  height: 70%;
 }
 .ingredients h2 {
   margin-bottom: 20px;

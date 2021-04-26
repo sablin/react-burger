@@ -1,12 +1,13 @@
 .burgerConstructor {
   width: 600px;
-  height: inherit;
-  overflow-y: scroll;
-  overflow-x: hidden;
+
   margin-top: 70px;
 }
 .BurgerContainer {
   margin-bottom: 16px;
+  height: 35%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .result {
   display: flex;
