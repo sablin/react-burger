@@ -1,0 +1,13 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 3;
+  overflow: hidden;
+  height: 100%;
+}

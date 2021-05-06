@@ -1,0 +1,23 @@
+.burgerConstructor {
+  width: 600px;
+
+  margin-top: 70px;
+}
+.BurgerContainer {
+  margin-bottom: 16px;
+  height: 35%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.result {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-around;
+  align-items: center;
+  text-align: right;
+  margin-top: 40px;
+}
+li {
+  list-style: none;
+  margin-bottom: 16px;
+}

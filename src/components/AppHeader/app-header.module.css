@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  background: #1c1c21;
+}
+.header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header a span {
+  margin-left: 8px;
+}
+
+nav {
+  display: flex;
+}
